@@ -1,1 +1,16 @@
-This is 
+#1. load samtools
+#In many linux systems, you dont have to use "load samtools" if you have conda and you install samtools in a conda environment
+spack load samtools
+#2. fasta file for example
+# fasta file name is test.fa
+>chr1
+ATCGATCATCGATCG
+#3. Get specific position sequence
+samtools faidx test.fa chr1:1-2
+#4. explanation
+samtools is the software to use
+faidx is the command in samtools to use
+chr1 is the fasta name
+1-2: the 1st and 2nd postion 
+#5, 
+
